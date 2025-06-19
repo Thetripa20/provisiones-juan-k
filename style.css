@@ -74,3 +74,48 @@ body {
   border-radius: 5px;
   font-weight: bold;
 }
+.carrito {
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.carrito h2 {
+  margin-bottom: 20px;
+}
+
+.items .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.total {
+  text-align: right;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.item-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item button {
+  border: none;
+  background: #007bff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background-color: #0056b3;
+}
