@@ -84,41 +84,40 @@
       <h3>Arroz Zulia x 500g</h3>
       <p>Arroz blanco de grano largo, ideal para tus comidas.</p>
       <span>$2.000</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Arroz Zulia x 500g', 2.000)">Agregar al carrito</button>
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Arroz Zulia x 500g', 2000)">Agregar al carrito</button>
     </div>
     <div class="producto">
       <img src="img/leche klarens.webp" alt="Leche" />
       <h3>Leche Entera 900ml</h3>
       <p>Leche pasteurizada entera. Rica y nutritiva.</p>
       <span>$4.000</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Leche Entera 900ml', 4.000)">Agregar al carrito</button>
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Leche Entera 900ml', 4000)">Agregar al carrito</button>
     </div>
     <div class="producto">
       <img src="img/carton-de-huevos.jpg" alt="Huevos" />
       <h3>Huevos x 15</h3>
       <p>Huevos frescos de gallina, calidad A.</p>
       <span>$13.200</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Huevos x 15', 13.200)">Agregar al carrito</button>
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Huevos x 15', 13200)">Agregar al carrito</button>
     </div>
     <div class="producto">
       <img src="img/Aceite riquisimo.jpg" alt="Aceite Riquisimo" />
       <h3>Aceite Riquísimo x1L</h3>
       <p>"De la naturaleza a tu mesa, el aceite que transforma lo simple en especial.".</p>
       <span>$10.500</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Aceite riquísimo x 1L',10.500)">Agregar al carrito</button>
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Aceite riquísimo x 1L',10500)">Agregar al carrito</button>
     </div>
     <div class="producto">
       <img src="productos/Arina pan x1kg.jpg" alt="Arina-pan" />
       <h3>Arina Pan x1kg</h3>
       <p>"Harina que da vida a tus ideas, desde el primer amasado hasta el último bocado.".</p>
       <span>$2.000</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Arina Pan x1kg', 2.000)">Agregar al carrito</button>
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Arina Pan x1kg', 2000)">Agregar al carrito</button>
     </div>
   </div>
 </section>
 
-<!-- Carrito -->
-<section class="carrito" id="carrito">
+<section class="carrito">
   <h2>Carrito de Compras</h2>
   <div id="carrito-items" class="items"></div>
   <div class="total">
@@ -127,8 +126,48 @@
   <button class="btn btn-danger mt-3" onclick="vaciarCarrito()">Vaciar carrito</button>
 </section>
 
+
+<!-- promociones -->
+ <section class="promo-productos" style="background-color: #f8f9fa; padding: 40px 20px;">
+  <div style="max-width: 1200px; margin: auto; text-align: center;">
+    <h2 style="font-size: 2em; margin-bottom: 10px;">Promociones Especiales</h2>
+    <p style="color: #555; margin-bottom: 30px;">¡Aprovecha nuestras ofertas por tiempo limitado!</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+      
+      <!-- Producto 1 -->
+      <div style="background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="img/arroz-zulia-blanco-500gr.jpg" alt="Producto 1" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin: 15px 0 5px;">Arroz Zulia 500g</h3>
+        <p style="color: #28a745; font-weight: bold;">10% de descuento</p>
+        <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div style="background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="img/aceite x900ml.webp" alt="Producto 2" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin: 15px 0 5px;">Aceite Vegetal 900ml</h3>
+        <p style="color: #28a745; font-weight: bold;">¡Precio especial!</p>
+        <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div style="background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 250px; padding: 20px;">
+        <img src="img/papel higienico.jpg" alt="Producto 3" style="width: 100%; border-radius: 10px;">
+        <h3 style="margin: 15px 0 5px;">Papel Higiénico x4</h3>
+        <p style="color: #28a745; font-weight: bold;">2x1 por tiempo limitado</p>
+        <button style="background-color: #007bff; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script src="carrito.js"></script>
+
+
 </body>
 </html>
