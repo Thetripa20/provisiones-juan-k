@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Provisiones Juan-k</title>
+    <title>electrodomesticos Juan-k</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carrito.css" />
@@ -28,16 +28,14 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
+            <a class="nav-link active" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#productos-destacados">Productos Destacados</a>
           </li>
-          <!--  -->
-          <li class="nav-item">
-            <a class="nav-link" href="electrodomesticos.html">electrodomesticos</a>
+             <li class="nav-item">
+            <a class="nav-link active" href="#">electrodomesticos </a>
           </li>
-          <!--  -->
           <li class="nav-item">
             <a class="nav-link" href="#carrito">Carrito</a>
           </li>
@@ -66,10 +64,10 @@
       <img src="img-carrusel/Imagen oferta.png" class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src="img/supermarket-4052658_1920.jpg" class="d-block w-100" alt="..." />
+      <img src="img/pacillo electrodomesticos (1).webp" class="d-block w-100" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src="img/mother-8276674_1920.jpg" class="d-block w-100" alt="..." />
+      <img src="img/famila electrodomesticos (1).jpg" class="d-block w-100" alt="..." />
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -83,16 +81,26 @@
 <!-- Productos -->
 <section class="productos" id="productos-destacados">
   <h2>Productos Destacados</h2>
-  <div class="contenedor-productos">
+  <!--  -->
+<div class="contenedor-productos">
+  <div class="producto">
+    <img src="img/Refrigerador de 19 pies cúbicos Mabe RMB520IBMRX1.jpg" alt="Refrigerador de 19 pies cúbicos - Marca: Mabe." />
+    <h3>Refrigerador de 19 pies cúbicos - Marca: Mabe.</h3>
+    <p>
+       Modelo: RMB520IBMRX1<br />
+       Voltaje: 115 V<br />
+       Frecuencia: 60 Hz<br />
+      Display táctil<br />
+       Garantía: 6 meses
+    </p>
+    <span>$5.000.000</span><br />
+    <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Refrigerador de 19 pies cúbicos - Mabe', 5000000)">Agregar al carrito</button>
+  </div>
+</div>
+
+    <!--  -->
     <div class="producto">
-      <img src="img/arroz-zulia-blanco-500gr.jpg" alt="Arroz" />
-      <h3>Arroz Zulia x 500g</h3>
-      <p>Arroz blanco de grano largo, ideal para tus comidas.</p>
-      <span>$2.000</span><br />
-      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Arroz Zulia x 500g', 2000)">Agregar al carrito</button>
-    </div>
-    <div class="producto">
-      <img src="img/leche klarens.webp" alt="Leche" />
+      <img src="img/Lavadora WHIRLPOOL Carga Superior 19 kg (42 lb).webp" alt="Leche" />
       <h3>Leche Entera 900ml</h3>
       <p>Leche pasteurizada entera. Rica y nutritiva.</p>
       <span>$4.000</span><br />
@@ -105,6 +113,7 @@
       <span>$13.200</span><br />
       <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Huevos x 15', 13200)">Agregar al carrito</button>
     </div>
+    <!--  -->
     <div class="producto">
       <img src="img/Aceite riquisimo.jpg" alt="Aceite Riquisimo" />
       <h3>Aceite Riquísimo x1L</h3>
