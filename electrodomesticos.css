@@ -1,0 +1,155 @@
+/* Estilo general del logo y navbar */
+.logo {
+  width: 40px;
+  height: auto;
+  margin: 6px;
+  border-radius: 20px;
+}
+.color-fondo {
+  background-color: rgb(23, 138, 23);
+}
+
+/* Body y estructura */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sección de productos */
+.productos {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Tarjeta de producto */
+.producto {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.producto img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.producto p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.producto span {
+  display: block;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.producto button {
+  width: 100%;
+}
+
+/* ===== Carrito de compras ===== */
+.carrito {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+}
+
+.carrito h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.items {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.item span {
+  font-weight: bold;
+  color: #333;
+}
+
+.item-cantidad {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-cantidad button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item-cantidad button:hover {
+  background-color: #218838;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+
+.carrito button.btn-danger {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
