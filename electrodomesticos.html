@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Electrodomésticos Juan-k</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="electrodomesticos.css" />
+    <link rel="stylesheet" href="carrito.css" />
+  </head>
+  <body>
+
+<!-- Navbar -->
+<nav class="navbar color-fondo text-light fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#navbar">
+      <img src="img/logo provisiones juan-k.jpg" alt="Logo" class="logo" />
+      <span style="color: #fff;">Provisiones Juan-k</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menú</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#productos-destacados">Productos Destacados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Electrodomésticos Juan-k</a>
+          </li>
+          <!--  -->
+              <li class="nav-item">
+            <a class="nav-link" href="carnes.html">Carnes Juan-k</a>
+          </li>
+          <!--  -->
+            <li class="nav-item">
+            <a class="nav-link" href="verduras.html"> Frutas y verduras Juan-k</a>
+          </li>
+          <!--  -->
+          <li class="nav-item">
+            <a class="nav-link" href="#carrito">Carrito Juan-k</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Espaciado -->
+<div style="height: 70px;"></div>
+
+<!-- Carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img-carrusel/Imagen oferta.png" class="d-block w-100" alt="Oferta" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/pacillo electrodomesticos (1).webp" class="d-block w-100" alt="Pasillo electrodomésticos" />
+    </div>
+    <div class="carousel-item">
+      <img src="img/famila electrodomesticos (1).jpg" class="d-block w-100" alt="Familia con electrodomésticos" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Productos Destacados -->
+<section class="productos" id="productos-destacados">
+  <h2>Electrodomésticos Destacados</h2>
+  <div class="contenedor-productos">
+    <div class="producto">
+      <img src="img/Refrigerador de 19 pies cúbicos Mabe RMB520IBMRX1.jpg" alt="Refrigerador" />
+      <h3>Refrigerador 400L</h3>
+      <p>Refrigerador de alta eficiencia energética y amplio espacio.</p>
+      <span>$5.000.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Refrigerador 400L', 5000000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Lavadora WHIRLPOOL Carga Superior 19 kg (42 lb).webp" alt="Lavadora" />
+      <h3>Lavadora Automática 19kg</h3>
+      <p>Lava más ropa con menos esfuerzo. Eficiencia A++.</p>
+      <span>$3.200.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Lavadora Automática 19kg', 3200000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/microondas-samsung.jpg" alt="Microondas" />
+      <h3>Microondas Digital 30L</h3>
+      <p>Funciones automáticas, diseño moderno y seguro.</p>
+      <span>$1.100.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Microondas Digital 30L', 1100000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Licuadora Oster 10 velocidades.jpg" alt="Licuadora" />
+      <h3>Licuadora de Alta Potencia</h3>
+      <p>Ideal para batidos, jugos y mezclas resistentes.</p>
+      <span>$350.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Licuadora de Alta Potencia', 350000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/tostadora.jpg" alt="Tostadora" />
+      <h3>Tostadora Eléctrica</h3>
+      <p>Doradora de pan con ajustes de nivel de tostado.</p>
+      <span>$180.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Tostadora Eléctrica', 180000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Estufa de mesa Haceb 4 puestos.jpg" alt="Estufa" />
+      <h3>Estufa a Gas 4 Puestos</h3>
+      <p>Parrillas de hierro fundido y encendido eléctrico.</p>
+      <span>$1.800.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Estufa a Gas 4 Puestos', 1800000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Horno Tostador Kalley.webp" alt="Horno Eléctrico" />
+      <h3>Horno Eléctrico 45L</h3>
+      <p>Perfecto para asar, hornear y gratinar.</p>
+      <span>$950.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Horno Eléctrico 45L', 950000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Cafetera Programable.jpg" alt="Cafetera" />
+      <h3>Cafetera Programable</h3>
+      <p>Prepara tu café a la hora perfecta cada día.</p>
+      <span>$280.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Cafetera Programable', 280000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ventilador de pedestal Samurai.jpg" alt="Ventilador" />
+      <h3>Ventilador de Pedestal</h3>
+      <p>Velocidades ajustables y oscilación automática.</p>
+      <span>$220.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Ventilador de Pedestal', 220000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Plancha de Vapor.jpg" alt="Plancha" />
+      <h3>Plancha de Vapor</h3>
+      <p>Elimina arrugas fácilmente con vapor continuo.</p>
+      <span>$130.000</span><br />
+      <button class="btn btn-success mt-2" onclick="agregarAlCarrito('Plancha de Vapor', 130000)">Agregar al carrito</button>
+    </div>
+  </div>
+</section>
+
+<!-- Carrito -->
+<section class="carrito" id="carrito">
+  <h2>Carrito de Compras</h2>
+  <div id="carrito-items" class="items"></div>
+  <div class="total">
+    <strong>Total:</strong> $<span id="carrito-total">0</span>
+  </div>
+  <button class="btn btn-danger mt-3" onclick="vaciarCarrito()">Vaciar carrito</button>
+</section>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+<script src="carrito.js"></script>
+
+</body>
+</html>
