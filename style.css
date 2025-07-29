@@ -14,6 +14,14 @@ body {
   padding: 0;
 }
 
+.h2_productos{
+  text-align: center;
+  padding: 20px;
+  color: #333;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
 .productos {
   padding: 40px 20px;
   text-align: center;
