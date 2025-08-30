@@ -26,12 +26,12 @@
                 <img src="img/img-carrucel-empresas/Ramo.png" alt="Ramo" width="130" height="80" style="border-radius: 10px;">
                 <img src="img/img-carrucel-empresas/doria..png" alt="Doria" width="130" height="80" style="border-radius: 10px;">
                 <img src="img/img-carrucel-empresas/BIMBOpng.png" alt="BIMBO" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/drummond.png" alt="Drummond" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Ecopetrol.png" alt="Ecopetrol" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Gran Colombia Gold.png" alt="Gran Colombia" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Grupo Éxito.png" alt="Éxito" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/grupo nutresa.png" alt="Nutresa" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/mineross.a.png" alt="Mineros S.A." width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/coca cola .png" alt="coca-cola" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/ariel.jpg" alt="Ariel" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Colgate (1) (1).png" alt="colgate" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Heinz (1).png" alt="Heinz" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/La Fina.png" alt="la fina" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Familia.jpg" alt="familia" width="130" height="80" style="border-radius: 10px;">
                 <img src="assets/img/logo_Empresas/prodeco.png" alt="Prodeco" width="130" height="80" style="border-radius: 10px;">
 
                 <!-- Lote 2 (repetido para continuidad infinita) -->
@@ -43,13 +43,13 @@
                 <img src="img/img-carrucel-empresas/Ramo.png" alt="Ramo" width="130" height="80" style="border-radius: 10px;">
                 <img src="img/img-carrucel-empresas/doria..png" alt="Doria" width="130" height="80" style="border-radius: 10px;">
                 <img src="img/img-carrucel-empresas/BIMBOpng.png" alt="BIMBO" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/drummond.png" alt="Doria" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Ecopetrol.png" alt="Ecopetrol" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Gran Colombia Gold.png" alt="Gran Colombia" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/Grupo Éxito.png" alt="Éxito" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/grupo nutresa.png" alt="Nutresa" width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/mineross.a.png" alt="Mineros S.A." width="130" height="80" style="border-radius: 10px;">
-                <img src="assets/img/logo_Empresas/prodeco.png" alt="Prodeco" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/coca cola .png" alt="coca-cola" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/ariel.jpg" alt="Ariel" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Colgate (1) (1).png" alt="colgate" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Heinz (1).png" alt="Heinz" width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/La Fina.png" alt="la fina" widthla ="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Familia.jpg" alt="familia "width="130" height="80" style="border-radius: 10px;">
+                <img src="img/img-carrucel-empresas/Corona (1).png" alt="corona" width="130" height="80" style="border-radius: 10px;">
             </div>
         </div>
     </section>
