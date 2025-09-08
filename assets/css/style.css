@@ -169,3 +169,28 @@ body {
   background-color: #45a049;
   transform: scale(1.05);
 }
+/* Estilos para las promociones */
+.etiqueta-promocion {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff4d4d;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  z-index: 10;
+}
+
+.precio-normal {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+.precio-promocion {
+  color: #d9534f !important;
+  font-weight: bold;
+}
