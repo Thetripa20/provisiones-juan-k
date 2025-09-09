@@ -1,5 +1,7 @@
 <?php
+// Inicia la sesión de PHP. Es necesario para acceder a las variables de sesión, como el estado del login del usuario.
 session_start();
+// Incluye el archivo de conexión a la base de datos.
 require_once '../models/Conexion.php';
 ?>
 
@@ -63,20 +65,26 @@ require_once '../models/Conexion.php';
   <h2>Carnes</h2>
   <div class="contenedor-productos">
     <?php
+    // Crea una nueva instancia de la clase Conexion para conectarse a la base de datos.
     $db = new Conexion();
     $conn = $db->getConexion();
+    // Consulta SQL para seleccionar todos los productos de la categoría 'Carnes'.
     $sql = "SELECT * FROM productos WHERE categoria = 'Carnes'";
     $resultado = $conn->query($sql);
     
+    // Verifica si hay resultados en la consulta.
     if ($resultado->num_rows > 0) {
+      // Itera sobre cada fila de resultados para mostrar un producto.
       while($producto = $resultado->fetch_assoc()) {
         $precio_mostrar = $producto['precio'];
         $clase_precio = '';
         $precio_normal_tag = '';
 
+        // Comprueba si el producto está en promoción.
         if ($producto['en_promocion'] && $producto['precio_promocion'] !== null) {
             $precio_mostrar = $producto['precio_promocion'];
             $clase_precio = 'precio-promocion';
+            // Muestra el precio normal tachado si hay una promoción.
             $precio_normal_tag = "<span class='precio-normal'>$" . number_format($producto['precio'], 0, ',', '.') . "</span>";
         }
     ?>
@@ -109,8 +117,10 @@ require_once '../models/Conexion.php';
     <?php
       }
     } else {
+      // Mensaje si no se encuentran productos.
       echo "<p class='text-center'>No hay productos de esta categoría.</p>";
     }
+    // Cierra la conexión a la base de datos.
     $db->cerrarConexion();
     ?>
   </div>
@@ -123,11 +133,13 @@ require_once '../models/Conexion.php';
     <strong>Total:</strong> $<span id="carrito-total">0</span>
   </div>
   <button class="btn btn-danger mt-3" onclick="vaciarCarrito()">Vaciar carrito</button>
+  <button class="btn btn-primary mt-3" onclick="finalizarPedido()">Realizar Pedido</button>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../assets/js/carrito.js"></script>
 <script>
+// Script para actualizar el precio del producto al mover el slider.
 function actualizarPrecio(rango) {
   const tarjeta = rango.closest(".producto");
   const precioNormal = parseFloat(rango.getAttribute("data-precio"));
@@ -139,12 +151,14 @@ function actualizarPrecio(rango) {
   cantidadKilosSpan.textContent = kilos;
 
   let precioCalculado = 0;
+  // Comprueba si hay una promoción y si el precio de promoción es un número.
   if (!isNaN(precioPromocion) && rango.closest(".producto").querySelector('.etiqueta-promocion')) {
     precioCalculado = precioPromocion * kilos;
   } else {
     precioCalculado = precioNormal * kilos;
   }
 
+  // Actualiza el texto del precio.
   precioActualSpan.textContent = `$${precioCalculado.toLocaleString('es-CO')}`;
 }
 </script>

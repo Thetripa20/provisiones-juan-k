@@ -1,4 +1,8 @@
-<?php session_start(); ?>
+<?php
+// Inicia la sesión de PHP. Esto es necesario para acceder a las variables de sesión que guardan la información del usuario (como si ha iniciado sesión o no).
+session_start();
+?>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -10,7 +14,7 @@
 </head>
 <body>
 
-    <nav class="navbar color-fondo text-light fixed-top" id="navbar">
+<nav class="navbar color-fondo text-light fixed-top" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="../assets/img/logo provisiones juan-k.jpg" alt="Logo" class="logo" />
@@ -58,7 +62,7 @@
         </div>
     </nav>
 
-    <section class="inicio-hero">
+<section class="inicio-hero">
         <div class="container text-center">
             <h1>Bienvenidos al supermercado mayorista Provisiones-Juan-k</h1>
             <p>Donde podrá encontrar grandes ofertas en productos de calidad.</p>
@@ -85,7 +89,7 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-light text-center py-3 mt-5">
+<footer class="bg-dark text-light text-center py-3 mt-5">
         <p>&copy; <?php echo date("Y"); ?> Provisiones Juan-k. Todos los derechos reservados.</p>
     </footer>
 
